@@ -183,7 +183,7 @@ import numpy as np
 #####################################################
 
 
-data = torque = np.loadtxt("data/10_mct_tool_18_261104.csv", delimiter=",",
+data = np.loadtxt("data/10_mct_tool_18_261104.csv", delimiter=",",
                 skiprows=1, usecols=(-2, -1), encoding='utf-8')
 
 print("shape:", data.shape)

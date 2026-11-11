@@ -55,28 +55,35 @@
 
 ################################################
 
-temperatures = [25, 32, 35, 28, 31, 29, 34, 30, 35, 21]
+# temperatures = [25, 32, 35, 28, 31, 29, 34, 30, 35, 21]
 
-total = 0
+# total = 0
 
-for temp in temperatures:
-    total += temp
+# for temp in temperatures:
+#     total += temp
 
-overall_avg = total / len(temperatures)
+# overall_avg = total / len(temperatures)
 
-high_temps = []
+# high_temps = []
 
-for temp in temperatures:
-    if temp > 30:
-        high_temps.append(temp)
+# for temp in temperatures:
+#     if temp > 30:
+#         high_temps.append(temp)
 
-high_total = 0
+# high_total = 0
 
-for temp in high_temps:
-    high_total += temp
+# for temp in high_temps:
+#     high_total += temp
 
-high_avg = high_total / len(high_temps)
+# high_avg = high_total / len(high_temps)
 
-print("전체 평균:", overall_avg)
-print("고온 개수:", len(high_temps))
-print("고온 평균:", high_avg)
+# print("전체 평균:", overall_avg)
+# print("고온 개수:", len(high_temps))
+# print("고온 평균:", high_avg)
+
+################################################
+
+sensors = [[25, 26], [30, 31]]
+
+print(sensors[0])
+print(sensors[0][1])

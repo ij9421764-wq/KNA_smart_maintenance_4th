@@ -27,17 +27,22 @@
 
 ################################
 
-sensors = [
-    ("모터온도", 78, (3, 8)),
-    ("회전속도", 95, (7, 2)),
-    ("펌프압력", 88, (5, 5))
-]
+# sensors = [
+#     ("모터온도", 78, (3, 8)),
+#     ("회전속도", 95, (7, 2)),
+#     ("펌프압력", 88, (5, 5))
+# ]
 
-for name, value, (x, y) in sensors:
-    print(f"{name} 위치: ({x}, {y})")
+# for name, value, (x, y) in sensors:
+#     print(f"{name} 위치: ({x}, {y})")
 
-print("x <= 5 센서만 : ", end="")
+# print("x <= 5 센서만 : ", end="")
 
-for name, value, (x, y) in sensors:
-    if x <= 5:
-        print(f"{name}", end=", ")
+# for name, value, (x, y) in sensors:
+#     if x <= 5:
+#         print(f"{name}", end=", ")
+
+################################
+
+sensors = [ ("모터온도", 78), ("베어링진동", 0.5)]
+print(len(sensors))

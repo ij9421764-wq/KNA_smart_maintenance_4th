@@ -3,9 +3,9 @@
 
 # unique_sensors = set(sensor_ids)
 
-# print(sorted(unique_sensors))
+# print(sorted(unique_sensors)) # ['S01', 'S02', 'S03']
 
-# print("종류 수:", len(unique_sensors))
+# print("종류 수:", len(unique_sensors)) # 종류 수: 3
 
 ##########################################################
 
@@ -24,14 +24,20 @@
 # print("A만:", only_a)
 # print("B만:", only_b)
 
+# # 공통: {'S03', 'S05'}
+# # A만: {'S01', 'S02'}
+# # B만: {'S04'}
 ##########################################################
 
-yesterday = {"S01", "S02", "S03"}
-today = {"S02", "S03", "S05"}
+# yesterday = {"S01", "S02", "S03"}
+# today = {"S02", "S03", "S05"}
 
-new_events = today.difference(yesterday)
+# new_events = today.difference(yesterday)
 
-ongoing_events = today.intersection(yesterday)
+# ongoing_events = today.intersection(yesterday)
 
-print("신규 이상:", new_events)
-print("지속 이상:", ongoing_events)
+# print("신규 이상:", new_events)
+# print("지속 이상:", ongoing_events)
+
+# # 신규이상: {'S05'}
+# # 지속이상: {'S02', 'S03'}
